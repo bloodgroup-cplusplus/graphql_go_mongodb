@@ -24,13 +24,21 @@ type Mutation{
 
 
 input CreateJobListingInput{
+  title:String!
+  description:String!
+  company:String!
+  url:String!
 
 }
 
 input UpdateJobListingInput{
+  title:String
+  description:String
+  url:String
 
 }
 
 type DeleteJobResponse{
+  deleteJobID:String!
 
 }
